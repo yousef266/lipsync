@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "duration": 4.5,
+    "format": "arabic_lip_sync_v1",
+    "timestamp": "2025-11-10T01:40:53.441222"
+  },
+  "mouthCues": [
+    {
+      "start": 0.03,
+      "end": 0.64,
+      "value": "B",
+      "metadata": {
+        "phone": "k"
+      }
+    },
+    {
+      "start": 0.64,
+      "end": 0.68,
+      "value": "C",
+      "metadata": {
+        "tween": true
+      }
+    },
+    {
+      "start": 0.68,
+      "end": 1.26,
+      "value": "D",
+      "metadata": {
+        "phone": "aa"
+      }
+    },
+    {
+      "start": 1.95,
+      "end": 2.86,
+      "value": "B",
+      "metadata": {
+        "phone": "k"
+      }
+    },
+    {
+      "start": 2.86,
+      "end": 2.9,
+      "value": "C",
+      "metadata": {
+        "tween": true
+      }
+    },
+    {
+      "start": 2.9,
+      "end": 3.78,
+      "value": "D",
+      "metadata": {
+        "phone": "aa"
+      }
+    }
+  ]
+}
