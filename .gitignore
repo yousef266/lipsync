@@ -1,0 +1,33 @@
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Project specific
+output_*.wav
+*.json
+!1.json
+!3.json
+!4.json
+!whisper.json
+!OutputTest.json
+!OutputTest2.json
+!100.json
+!200.json
+!300.json
+!10000.json

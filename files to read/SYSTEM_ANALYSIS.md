@@ -255,7 +255,7 @@ transitions = {
 │ Step 7: Export                                              │
 │ - Generate JSON with metadata and mouthCues                │
 │ - Or export TSV for simple integration                     │
-│ Component: ArabicLipSyncEngine.export_json/tsv()            │
+│ Component: ArabicLipSyncEngine.export_json            │
 └────────┬────────────────────────────────────────────────────┘
          │
          ▼

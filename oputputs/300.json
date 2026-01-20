@@ -1,0 +1,249 @@
+{
+  "metadata": {
+    "duration": 4.5,
+    "format": "arabic_lip_sync_v1",
+    "timestamp": "2026-01-08T05:53:39.178969"
+  },
+  "mouthCues": [
+    {
+      "start": 0.0,
+      "end": 0.12,
+      "value": "B",
+      "metadata": {
+        "phone": "y"
+      }
+    },
+    {
+      "start": 0.12,
+      "end": 0.24,
+      "value": "H",
+      "metadata": {
+        "phone": "l"
+      }
+    },
+    {
+      "start": 0.24,
+      "end": 0.36,
+      "value": "C",
+      "metadata": {
+        "phone": "h"
+      }
+    },
+    {
+      "start": 0.36,
+      "end": 0.45,
+      "value": "A",
+      "metadata": {
+        "phone": "m"
+      }
+    },
+    {
+      "start": 0.45,
+      "end": 0.62,
+      "value": "B",
+      "metadata": {
+        "phone": "y"
+      }
+    },
+    {
+      "start": 0.62,
+      "end": 0.7,
+      "value": "F",
+      "metadata": {
+        "phone": "w"
+      }
+    },
+    {
+      "start": 0.7,
+      "end": 0.78,
+      "value": "A",
+      "metadata": {
+        "phone": "m"
+      }
+    },
+    {
+      "start": 0.78,
+      "end": 0.91,
+      "value": "B",
+      "metadata": {
+        "phone": "j"
+      }
+    },
+    {
+      "start": 0.91,
+      "end": 1.04,
+      "value": "A",
+      "metadata": {
+        "phone": "m"
+      }
+    },
+    {
+      "start": 1.04,
+      "end": 1.17,
+      "value": "B",
+      "metadata": {
+        "phone": "y"
+      }
+    },
+    {
+      "start": 1.17,
+      "end": 1.3,
+      "value": "H",
+      "metadata": {
+        "phone": "l"
+      }
+    },
+    {
+      "start": 1.32,
+      "end": 1.59,
+      "value": "C",
+      "metadata": {
+        "phone": "'"
+      }
+    },
+    {
+      "start": 1.59,
+      "end": 1.86,
+      "value": "B",
+      "metadata": {
+        "phone": "n"
+      }
+    },
+    {
+      "start": 1.86,
+      "end": 1.9,
+      "value": "C",
+      "metadata": {
+        "tween": true
+      }
+    },
+    {
+      "start": 1.9,
+      "end": 2.13,
+      "value": "D",
+      "metadata": {
+        "phone": "aa"
+      }
+    },
+    {
+      "start": 2.14,
+      "end": 2.27,
+      "value": "C",
+      "metadata": {
+        "phone": "'"
+      }
+    },
+    {
+      "start": 2.27,
+      "end": 2.4,
+      "value": "B",
+      "metadata": {
+        "phone": "sh"
+      }
+    },
+    {
+      "start": 2.4,
+      "end": 2.44,
+      "value": "C",
+      "metadata": {
+        "tween": true
+      }
+    },
+    {
+      "start": 2.44,
+      "end": 2.53,
+      "value": "D",
+      "metadata": {
+        "phone": "ain"
+      }
+    },
+    {
+      "start": 2.53,
+      "end": 2.66,
+      "value": "B",
+      "metadata": {
+        "phone": "r"
+      }
+    },
+    {
+      "start": 2.68,
+      "end": 2.79,
+      "value": "A",
+      "metadata": {
+        "phone": "b"
+      }
+    },
+    {
+      "start": 2.79,
+      "end": 2.9,
+      "value": "B",
+      "metadata": {
+        "phone": "s"
+      }
+    },
+    {
+      "start": 2.92,
+      "end": 3.18,
+      "value": "D",
+      "metadata": {
+        "phone": "aa"
+      }
+    },
+    {
+      "start": 3.18,
+      "end": 3.31,
+      "value": "B",
+      "metadata": {
+        "phone": "d"
+      }
+    },
+    {
+      "start": 3.32,
+      "end": 3.45,
+      "value": "B",
+      "metadata": {
+        "phone": "gh"
+      }
+    },
+    {
+      "start": 3.45,
+      "end": 3.49,
+      "value": "C",
+      "metadata": {
+        "tween": true
+      }
+    },
+    {
+      "start": 3.49,
+      "end": 3.58,
+      "value": "D",
+      "metadata": {
+        "phone": "aa"
+      }
+    },
+    {
+      "start": 3.58,
+      "end": 3.62,
+      "value": "C",
+      "metadata": {
+        "tween": true
+      }
+    },
+    {
+      "start": 3.62,
+      "end": 3.71,
+      "value": "A",
+      "metadata": {
+        "phone": "m"
+      }
+    },
+    {
+      "start": 3.71,
+      "end": 3.84,
+      "value": "B",
+      "metadata": {
+        "phone": "r"
+      }
+    }
+  ]
+}

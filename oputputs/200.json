@@ -1,0 +1,265 @@
+{
+  "metadata": {
+    "duration": 4.5,
+    "format": "arabic_lip_sync_v1",
+    "timestamp": "2026-01-08T05:51:50.039001"
+  },
+  "mouthCues": [
+    {
+      "start": 0.0,
+      "end": 0.1,
+      "value": "B",
+      "metadata": {
+        "phone": "y"
+      }
+    },
+    {
+      "start": 0.1,
+      "end": 0.2,
+      "value": "H",
+      "metadata": {
+        "phone": "l"
+      }
+    },
+    {
+      "start": 0.2,
+      "end": 0.3,
+      "value": "D",
+      "metadata": {
+        "phone": "aa"
+      }
+    },
+    {
+      "start": 0.3,
+      "end": 0.4,
+      "value": "C",
+      "metadata": {
+        "phone": "h"
+      }
+    },
+    {
+      "start": 0.4,
+      "end": 0.5,
+      "value": "A",
+      "metadata": {
+        "phone": "m"
+      }
+    },
+    {
+      "start": 0.52,
+      "end": 0.66,
+      "value": "B",
+      "metadata": {
+        "phone": "y"
+      }
+    },
+    {
+      "start": 0.66,
+      "end": 0.73,
+      "value": "F",
+      "metadata": {
+        "phone": "w"
+      }
+    },
+    {
+      "start": 0.73,
+      "end": 0.8,
+      "value": "A",
+      "metadata": {
+        "phone": "m"
+      }
+    },
+    {
+      "start": 0.8,
+      "end": 0.97,
+      "value": "B",
+      "metadata": {
+        "phone": "j"
+      }
+    },
+    {
+      "start": 0.97,
+      "end": 1.14,
+      "value": "A",
+      "metadata": {
+        "phone": "m"
+      }
+    },
+    {
+      "start": 1.14,
+      "end": 1.31,
+      "value": "B",
+      "metadata": {
+        "phone": "y"
+      }
+    },
+    {
+      "start": 1.31,
+      "end": 1.48,
+      "value": "H",
+      "metadata": {
+        "phone": "l"
+      }
+    },
+    {
+      "start": 1.48,
+      "end": 1.72,
+      "value": "C",
+      "metadata": {
+        "phone": "'"
+      }
+    },
+    {
+      "start": 1.72,
+      "end": 1.96,
+      "value": "B",
+      "metadata": {
+        "phone": "n"
+      }
+    },
+    {
+      "start": 1.96,
+      "end": 2.0,
+      "value": "C",
+      "metadata": {
+        "tween": true
+      }
+    },
+    {
+      "start": 2.0,
+      "end": 2.2,
+      "value": "D",
+      "metadata": {
+        "phone": "aa"
+      }
+    },
+    {
+      "start": 2.22,
+      "end": 2.33,
+      "value": "C",
+      "metadata": {
+        "phone": "'"
+      }
+    },
+    {
+      "start": 2.33,
+      "end": 2.44,
+      "value": "B",
+      "metadata": {
+        "phone": "sh"
+      }
+    },
+    {
+      "start": 2.44,
+      "end": 2.48,
+      "value": "C",
+      "metadata": {
+        "tween": true
+      }
+    },
+    {
+      "start": 2.48,
+      "end": 2.55,
+      "value": "D",
+      "metadata": {
+        "phone": "aa"
+      }
+    },
+    {
+      "start": 2.55,
+      "end": 2.66,
+      "value": "B",
+      "metadata": {
+        "phone": "r"
+      }
+    },
+    {
+      "start": 2.68,
+      "end": 2.83,
+      "value": "A",
+      "metadata": {
+        "phone": "b"
+      }
+    },
+    {
+      "start": 2.83,
+      "end": 2.98,
+      "value": "B",
+      "metadata": {
+        "phone": "s"
+      }
+    },
+    {
+      "start": 2.98,
+      "end": 3.02,
+      "value": "C",
+      "metadata": {
+        "tween": true
+      }
+    },
+    {
+      "start": 3.02,
+      "end": 3.28,
+      "value": "D",
+      "metadata": {
+        "phone": "aa"
+      }
+    },
+    {
+      "start": 3.28,
+      "end": 3.43,
+      "value": "B",
+      "metadata": {
+        "phone": "d"
+      }
+    },
+    {
+      "start": 3.44,
+      "end": 3.58,
+      "value": "B",
+      "metadata": {
+        "phone": "dz"
+      }
+    },
+    {
+      "start": 3.58,
+      "end": 3.62,
+      "value": "C",
+      "metadata": {
+        "tween": true
+      }
+    },
+    {
+      "start": 3.62,
+      "end": 3.65,
+      "value": "D",
+      "metadata": {
+        "phone": "aa"
+      }
+    },
+    {
+      "start": 3.65,
+      "end": 3.72,
+      "value": "A",
+      "metadata": {
+        "phone": "m"
+      }
+    },
+    {
+      "start": 3.72,
+      "end": 4.04,
+      "value": "B",
+      "metadata": {
+        "phone": "r"
+      }
+    },
+    {
+      "start": 4.04,
+      "end": 4.36,
+      "value": "C",
+      "metadata": {
+        "phone": "h"
+      }
+    }
+  ]
+}
