@@ -19,7 +19,7 @@ __pycache__/
 Thumbs.db
 
 # Project specific
-output_*.wav
+*.wav
 *.json
 !1.json
 !3.json

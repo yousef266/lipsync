@@ -8,16 +8,19 @@ from ..core.models import TimeRange
 from ..audio.clip import AudioClip
 from ..linguistics.g2p import ArabicG2P
 from ..linguistics.mapper import ArabicShapeMapper
+from ..linguistics.diacritizer import ArabicDiacritizer
 from ..recognition.whisper_rec import SpeechRecognizer
 from ..engine.timeline import Timeline
 from ..utils.dependencies import WHISPER_AVAILABLE
 
+
 class ArabicLipSyncEngine:
     """Main engine for Arabic lip sync generation"""
 
-    def __init__(self):
+    def __init__(self, diacritizer_backend: str = "auto"):
         self.shape_mapper = ArabicShapeMapper()
         self.g2p = ArabicG2P()
+        self.diacritizer = ArabicDiacritizer(backend=diacritizer_backend)
         self.recognizer = SpeechRecognizer() if WHISPER_AVAILABLE else None
 
     def process_audio(
@@ -67,25 +70,36 @@ class ArabicLipSyncEngine:
     def _recognize_phones(
         self, audio_path: Path, audio: AudioClip
     ) -> List[Tuple[ArabicPhone, int, int]]:
-        """Use speech recognition to get phoneme timing"""
+        """Use speech recognition to get phoneme timing.
+
+        Each word from Whisper is first passed through the neural diacritizer
+        so that the rule-based G2P receives fully-vocalized text.
+        """
         transcript, word_segments = self.recognizer.transcribe(audio_path)
 
         if not word_segments:
             return self._estimate_phones(audio)
 
+        # Diacritize the full transcript in one pass for best neural context,
+        # then align the diacritized tokens back to Whisper word segments.
+        diac_words = self._diacritize_segments(
+            transcript,
+            [seg["word"].strip() for seg in word_segments],
+        )
+
         phones = []
-        for segment in word_segments:
-            word = segment["word"].strip()
+        for idx, segment in enumerate(word_segments):
+            word = diac_words[idx]
             start_sec = segment["start"]
             end_sec = segment["end"]
 
-            # Convert word to phones
+            # Convert diacritized word to phones
             word_phones = self.g2p.text_to_phones(word)
 
             if word_phones:
-                # Distribute time evenly across phones
+                # Distribute time evenly across phones in the word
                 duration_cs = int((end_sec - start_sec) * 100)
-                phone_duration = duration_cs // len(word_phones)
+                phone_duration = max(1, duration_cs // len(word_phones))
 
                 for i, phone in enumerate(word_phones):
                     phone_start = int(start_sec * 100) + i * phone_duration
@@ -93,6 +107,25 @@ class ArabicLipSyncEngine:
                     phones.append((phone, phone_start, phone_end))
 
         return phones
+
+    def _diacritize_segments(
+        self, transcript: str, raw_words: List[str]
+    ) -> List[str]:
+        """Return a diacritized word list aligned 1-to-1 with raw_words.
+
+        Strategy:
+          1. Diacritize the full transcript (better context for the model).
+          2. If the token count matches, use those tokens directly.
+          3. Otherwise fall back to per-word diacritization.
+        """
+        diac_full = self.diacritizer.diacritize(transcript)
+        diac_tokens = diac_full.split()
+
+        if len(diac_tokens) == len(raw_words):
+            return diac_tokens
+
+        # Fallback: diacritize each word independently
+        return [self.diacritizer.diacritize(w) for w in raw_words]
 
     def _estimate_phones(self, audio: AudioClip) -> List[Tuple[ArabicPhone, int, int]]:
         """Estimate phonemes from audio energy"""
