@@ -1,0 +1,52 @@
+Arabic G2P Pipeline Test  –  2026-03-22 19:07:37
+Python 3.10.11  |  File: d:\nasr_lipSync\lipsync\test_g2p_output.txt
+
+============================================================
+  Arabic G2P Pipeline Test
+============================================================
+
+Loading diacritizer... OK  [camel-tools (calima-msa-r13)]
+
+------------------------------------------------------------
+RAW TEXT:     انا بحب البرمجة
+DIACRITIZED:  أَنا بِحُبٍّ البَرْمَجَة
+PHONEMES:     ' A N AA | B I H U B B I N | AA L B A R M A J A
+PHONE COUNT:  21  (excluding silence)
+FEATURES:     shadda doubled ✓, tanwin (vowel+N) ✓
+
+------------------------------------------------------------
+RAW TEXT:     كتب محمد الرسالة
+DIACRITIZED:  كَتَبَ مُحَمَّد الرِسالَةَ
+PHONEMES:     K A T A B A | M U H A M M A D | AA L R I S AA L A A
+PHONE COUNT:  23  (excluding silence)
+FEATURES:     shadda doubled ✓
+
+------------------------------------------------------------
+RAW TEXT:     الولد راح المدرسة
+DIACRITIZED:  الوَلَد راحَ المَدْرَسَةِ
+PHONEMES:     AA L W A L A D | R AA H A | AA L M A D R A S A I
+PHONE COUNT:  21  (excluding silence)
+
+------------------------------------------------------------
+RAW TEXT:     الشمس طالعة النهاردة
+DIACRITIZED:  الشَمْسِ طالَعَهُ النهارده
+PHONEMES:     AA L SH A M S I | TT AA L A AIN A H U | AA L N H AA R D H
+PHONE COUNT:  23  (excluding silence)
+
+------------------------------------------------------------
+RAW TEXT:     مصر جميلة جدا
+DIACRITIZED:  مِصْر جَمِيلَةٍ جِدّاً
+PHONEMES:     M I SS R | J A M I Y L A I N | J I D D AA A N
+PHONE COUNT:  20  (excluding silence)
+FEATURES:     shadda doubled ✓, tanwin (vowel+N) ✓
+
+============================================================
+  SUMMARY
+============================================================
+  Sentences tested   : 5
+  Diacritizer active : yes – camel-tools (calima-msa-r13)
+  Shadda detected in : 3/5 sentences
+  Tanwin detected in : 2/5 sentences
+
+  Output file        : d:\nasr_lipSync\lipsync\test_g2p_output.txt
+
