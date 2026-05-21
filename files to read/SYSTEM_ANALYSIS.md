@@ -594,3 +594,46 @@ The Arabic Lip Sync System is a **hybrid architecture** combining:
 
 It requires **no training by end users** and produces high-quality lip sync animation data suitable for professional 3D character animation in Arabic language applications. The system is production-ready with both GUI and CLI interfaces, supporting multiple input modes and output formats.
 
+---
+
+## References
+
+### Academic & Technical Sources
+
+1. **Whisper ASR Model**
+   - Radford et al. (2022): "Robust Speech Recognition via Large-Scale Weak Supervision"
+   - Paper: https://arxiv.org/abs/2212.04356
+   - Model: https://huggingface.co/openai/whisper-base
+   - Transformer encoder-decoder trained on 680k+ hours of multilingual speech
+
+2. **Whisper Implementation**
+   - HuggingFace Whisper documentation for word-level timestamps
+   - https://huggingface.co/openai/whisper-large-v3
+   - Usage: `return_timestamps="word"` for time-aligned output
+
+3. **Arabic Phonetics & G2P**
+   - "Automatic Grapheme-to-Phoneme Conversion of Arabic Text"
+   - https://www.scribd.com/document/320807531/Automatic-Grapheme-to-Phoneme-Conversion-of-Arabic-Text
+   - Standard Arabic: 28 consonants + 6 vowels (3 short + 3 long)
+
+4. **Viseme Theory & Mapping**
+   - Damien & Wakim (2009): "Viseme classes for Modern Arabic"
+   - Paper: https://new.eurasip.org/Proceedings/Eusipco/Eusipco2006/papers/1568982208.pdf
+   - Established viseme classes for Arabic via phonetic analysis
+
+5. **Phoneme-Viseme Alignment**
+   - Huang et al (2025): "PASE: Phoneme-Aware Speech Encoder to Improve Lip Sync Accuracy"
+   - Paper: https://arxiv.org/abs/2504.05803
+   - Emphasizes critical importance of precise phoneme-viseme alignment
+
+6. **Audio-Driven Viseme Dynamics**
+   - "Learning Audio-Driven Viseme Dynamics for 3D Face Animation"
+   - Paper: https://arxiv.org/abs/2301.06059
+   - Interpolation between viseme keyframes for natural motion
+
+7. **Egyptian Arabic Dataset**
+   - MAdel121/arabic-egy-cleaned on HuggingFace & EgySpeech
+   - https://huggingface.co/datasets/MAdel121/arabic-egy-cleaned
+   - https://www.kaggle.com/datasets/iraqyomar/egyspeech
+   - 72 hours of aligned Egyptian Arabic audio-transcript pairs
+
